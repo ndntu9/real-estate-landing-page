@@ -4,23 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Estate Landing Page</title>
-    <!-- todo css -->
+    <!-- ? reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- todo style css -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!--  * font -->
+    <!-- todo style css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!--  ? font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- todo header -->
+    <!-- ? pc header -->
     <header id="header" class="fixed-header">
       <div class="container">
-        <!-- * pc navbar -->
         <nav class="navbar">
-          <a href="#hero">
-            <img src="./assets/img/logo.svg" alt="" class="logo" />
+          <a href="#hero" class="logo">
+            <img src="./assets/img/logo.svg" alt="" />
           </a>
+          <!-- todo tablet & mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                fill="currentColor"
+              />
+            </svg>
+          </label>
+          <!-- ? pc menu -->
           <ul class="menu">
             <li class="item">
               <a href="#hero">Home</a>
@@ -38,26 +50,51 @@
               <a href="">Contact</a>
             </li>
           </ul>
-          <div class="navbar-cta">
-            <a href="#!" class="navbar-link">Sign in</a>
-            <a href="#!" class="navbar-btn btn">Sign up</a>
+          <div class="nav-cta">
+            <a href="#!" class="nav-link">Sign in</a>
+            <a href="#!" class="nav-btn btn">Sign up</a>
           </div>
         </nav>
       </div>
     </header>
-    <!-- todo main -->
-    <main>
-      <!-- todo hero -->
-      <div id="hero" class="hero">
-        <div class="container">
-          <div class="content">
-            <p class="sub-title">Welcome to Besnik Agency</p>
-            <h1 class="title">Discover a place you'll love to live.</h1>
-            <p class="desc">Get the best real estate deals first, before they hit the mass market! HOT FORECLOSURE DEALS with one simple search.</p>
-            <a href="#!" class="hero-btn btn">More About Us</a>
-          </div>
-        </div>
+    <!-- ? tablet & mobile header -->
+    <header class="mobile-header">
+      <!-- ? menu checkbox -->
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" hidden />
+      <!-- ? overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- ? menu drawer -->
+      <div class="menu-drawer">
+        <a href="#hero">
+          <img src="./assets/img/logo.svg" alt="" />
+        </a>
+        <!-- ? tablet & mobile menu -->
+        <ul class="menu">
+          <li class="item">
+            <a href="#hero">Home</a>
+          </li>
+          <li class="item">
+            <a href="">Features</a>
+          </li>
+          <li class="item">
+            <a href="">Services</a>
+          </li>
+          <li class="item">
+            <a href="">Resources</a>
+          </li>
+          <li class="item">
+            <a href="">Contact</a>
+          </li>
+          <li class="item tablet-hidden">
+            <a href="">Sign in</a>
+          </li>
+          <li class="item tablet-hidden">
+            <a href="">Sign up</a>
+          </li>
+        </ul>
       </div>
-    </main>
+    </header>
+    <!-- ? main -->
+    <main></main>
   </body>
 </html>

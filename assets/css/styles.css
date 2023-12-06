@@ -67,18 +67,18 @@ a {
   font-weight: 500;
 }
 
-.fixed-header .navbar-cta {
+.fixed-header .nav-cta {
   margin-left: auto;
 }
 
-.fixed-header .navbar-link {
+.fixed-header .nav-link {
   color: #0f1b4c;
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.fixed-header .navbar-btn {
-  margin-left: 18px;
+.fixed-header .nav-btn {
+  margin-left: 1.8rem;
   min-width: 9.8rem;
   line-height: 4rem;
   border-radius: 0.8rem;
