@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -9,4 +14,73 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
+  height: 3000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 110rem;
+  max-width: calc(100% - 4.8rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 17rem;
+  line-height: 5rem;
+  border-radius: 1.2rem;
+  background: #0f1b4c;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* todo header */
+.fixed-header {
+  padding-top: 26px;
+  position: sticky;
+  top: -26px;
+  font-size: 1rem;
+  background: #e6f0ff;
+}
+
+.fixed-header .navbar {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.fixed-header .menu {
+  margin-left: 6.4rem;
+  display: flex;
+  gap: 2.8rem;
+}
+
+.fixed-header .menu a {
+  color: #4f5361;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.fixed-header .navbar-cta {
+  margin-left: auto;
+}
+
+.fixed-header .navbar-link {
+  color: #0f1b4c;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.fixed-header .navbar-btn {
+  margin-left: 18px;
+  min-width: 9.8rem;
+  line-height: 4rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
 }
