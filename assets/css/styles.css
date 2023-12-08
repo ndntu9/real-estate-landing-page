@@ -22,65 +22,66 @@ a {
 }
 
 .container {
-  width: 110rem;
-  max-width: calc(100% - 4.8rem);
+  width: 1110px;
+  max-width: calc(100% - 48px);
   margin-right: auto;
   margin-left: auto;
 }
 
 .btn {
   display: inline-block;
-  min-width: 17rem;
-  line-height: 5rem;
-  border-radius: 1.2rem;
+  width: 170px;
+  line-height: 50px;
   background: #0f1b4c;
+  font-size: 1.3rem;
+  border-radius: 12px;
   color: #fff;
   text-align: center;
-  font-size: 1.3rem;
   font-weight: 500;
 }
 
-/* todo header */
-.fixed-header {
+/* ! header */
+.header {
   padding-top: 26px;
+  background: #e6f0ff;
   position: sticky;
   top: -26px;
-  font-size: 1rem;
-  background: #e6f0ff;
 }
 
-.fixed-header .navbar {
+.header .navbar {
   padding: 12px 0;
   display: flex;
   align-items: center;
 }
 
-.fixed-header .menu {
-  margin-left: 6.4rem;
+.header .nav-menu {
+  margin-left: 64px;
   display: flex;
-  gap: 2.8rem;
+  gap: 28px;
 }
 
-.fixed-header .menu a {
+.header .nav-menu li a {
   color: #4f5361;
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.fixed-header .nav-cta {
+.header .nav-cta {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.fixed-header .nav-link {
+.header .nav-link {
   color: #0f1b4c;
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.fixed-header .nav-btn {
-  margin-left: 1.8rem;
-  min-width: 9.8rem;
-  line-height: 4rem;
-  border-radius: 0.8rem;
+.header .nav-btn {
+  width: 98px;
+  line-height: 40px;
+  border-radius: 8px;
   font-size: 1.4rem;
 }
