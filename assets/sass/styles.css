@@ -64,9 +64,6 @@ a {
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.nav .menu a:hover {
-  color: #0f1b4c;
-}
 .nav .cta {
   margin-left: auto;
 }
@@ -118,6 +115,10 @@ a {
   position: absolute;
   right: calc((100% - 1110px) / 2 - 100px);
   bottom: 0;
+}
+
+.clients {
+  margin: 79px 0 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
