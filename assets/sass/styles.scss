@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -41,6 +46,7 @@ a {
   position: sticky;
   top: -26px;
   background: #e6f0ff;
+  z-index: 1;
 }
 
 .nav {
@@ -81,5 +87,49 @@ a {
       border-radius: 8px;
       font-size: 1.4rem;
     }
+  }
+}
+
+// ! hero
+.hero {
+  padding: 118px 0 137px;
+  background: #e6f0ff;
+  position: relative;
+
+  .content {
+    width: calc((559 / 1110) * 100%);
+
+    .sub-title {
+      color: #687690;
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    .title {
+      margin-top: 8px;
+      color: #000336;
+      font-size: 6.4rem;
+      font-weight: 700;
+      line-height: 1.1875;
+    }
+
+    .desc {
+      margin-top: 30px;
+      color: #5a6473;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.78;
+    }
+
+    .hero-btn {
+      margin-top: 40px;
+    }
+  }
+
+  .hero-img {
+    position: absolute;
+    right: calc((100% - 1110px) / 2 - 100px);
+    bottom: 0;
   }
 }
