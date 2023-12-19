@@ -290,4 +290,129 @@ a {
   gap: 9px;
 }
 
+.stats {
+  padding: 50px 0;
+}
+.stats .body {
+  margin-left: 120px;
+  display: flex;
+  gap: 165px;
+}
+.stats .body .media {
+  position: relative;
+}
+.stats .body .media .media-img {
+  width: 400px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.stats .body .card {
+  width: 239px;
+  height: 252px;
+  border-radius: 0px 0px 12px 12px;
+  background: #fff;
+  box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 0;
+  left: -120px;
+}
+.stats .body .card .info {
+  margin: 45px 23px 40px 22px;
+}
+.stats .body .card .row {
+  display: flex;
+  justify-content: space-between;
+}
+.stats .body .card .row span {
+  color: #000339;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+.stats .body .card .desc {
+  margin-top: 8px;
+  color: #a7a7a7;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+}
+.stats .body .card .desc::after {
+  display: inline-block;
+  content: "";
+  width: 194px;
+  height: 1.2px;
+  background: #e9e9e9;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+}
+.stats .body .card .avatar-groups {
+  margin-top: 52px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.stats .body .card .avatar {
+  width: 16px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.stats .body .card .avatar:not(:first-child) {
+  margin-left: -6px;
+}
+.stats .body .content {
+  width: 309px;
+}
+.stats .body .content .title {
+  margin-top: 79px;
+  color: #000339;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.285;
+  position: relative;
+}
+.stats .body .content .title::before {
+  display: inline-block;
+  content: "";
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.stats .body .content .desc {
+  margin-top: 20px;
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.875;
+}
+.stats .stats-properties {
+  width: 985px;
+  margin: 110px auto 0;
+  display: flex;
+  gap: 220px;
+}
+.stats .stats-properties .item {
+  display: flex;
+  gap: 22px;
+  flex-direction: column;
+}
+.stats .stats-properties .stat {
+  color: #000;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+.stats .stats-properties .desc {
+  color: #7b8087;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=styles.css.map */

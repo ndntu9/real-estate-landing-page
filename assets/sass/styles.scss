@@ -334,3 +334,149 @@ a {
     }
   }
 }
+
+// ! stats
+.stats {
+  padding: 50px 0;
+
+  .body {
+    margin-left: 120px;
+    display: flex;
+    gap: 165px;
+
+    .media {
+      position: relative;
+
+      .media-img {
+        width: 400px;
+        height: 460px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    .card {
+      width: 239px;
+      height: 252px;
+      border-radius: 0px 0px 12px 12px;
+      background: #fff;
+      box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+      position: absolute;
+      top: 0;
+      left: -120px;
+
+      .info {
+        margin: 45px 23px 40px 22px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          color: #000339;
+          font-size: 2.6rem;
+          font-weight: 700;
+          letter-spacing: 0.01em;
+        }
+      }
+
+      .desc {
+        margin-top: 8px;
+        color: #a7a7a7;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        position: relative;
+
+        &::after {
+          display: inline-block;
+          content: '';
+          width: 194px;
+          height: 1.2px;
+          background: #e9e9e9;
+          position: absolute;
+          bottom: -26px;
+          left: 0;
+        }
+      }
+
+      .avatar-groups {
+        margin-top: 52px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .avatar {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+        border-radius: 50%;
+
+        &:not(:first-child) {
+          margin-left: -6px;
+        }
+      }
+    }
+
+    .content {
+      width: 309px;
+
+      .title {
+        margin-top: 79px;
+        color: #000339;
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 1.285;
+        position: relative;
+
+        &::before {
+          display: inline-block;
+          content: '';
+          width: 41px;
+          height: 4px;
+          border-radius: 12px;
+          background: #000339;
+          position: absolute;
+          top: -10px;
+          left: 0;
+        }
+      }
+
+      .desc {
+        margin-top: 20px;
+        color: #5a6473;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.875;
+      }
+    }
+  }
+
+  .stats-properties {
+    width: 985px;
+    margin: 110px auto 0;
+    display: flex;
+    gap: 220px;
+
+    .item {
+      display: flex;
+      gap: 22px;
+      flex-direction: column;
+    }
+
+    .stat {
+      color: #000;
+      font-size: 6.4rem;
+      font-weight: 600;
+    }
+
+    .desc {
+      color: #7b8087;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  }
+}
